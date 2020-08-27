@@ -28,7 +28,9 @@
 #include <sys/ipc.h>
 #include <sys/sem.h>
 
+#ifndef USING_NEW_TEST_LIB
 #include "test.h"
+#endif
 #include "lapi/semun.h"
 
 void cleanup(void);
